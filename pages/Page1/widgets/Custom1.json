@@ -1,0 +1,58 @@
+{
+  "backgroundColor": "",
+  "borderColor": "",
+  "borderRadius": "0px",
+  "borderWidth": "",
+  "bottomRow": 100,
+  "boxShadow": "none",
+  "defaultModel": "{\n  \"tips\": [\n    \"Pass data to this widget in the default model field\",\n    \"Access data in the javascript file using the appsmith.model variable\",\n    \"Create events in the widget and trigger them in the javascript file using appsmith.triggerEvent('eventName')\",\n    \"Access data in CSS as var(--appsmith-model-{property-name})\"\n  ]\n}",
+  "dynamicBindingPathList": [
+    {
+      "key": "theme"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicTriggerPathList": [
+    {
+      "key": "onResetClick"
+    }
+  ],
+  "events": [
+    "onResetClick"
+  ],
+  "isCanvas": false,
+  "isLoading": false,
+  "isSearchWildcard": true,
+  "isVisible": true,
+  "key": "6qe14ns5rr",
+  "leftColumn": 0,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "mobileBottomRow": 43,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 9,
+  "mobileTopRow": 13,
+  "needsErrorInfo": false,
+  "onResetClick": "{{showAlert('Successfully reset!!', '');}}",
+  "parentColumnSpace": 20.25,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 10,
+  "srcDoc": {
+    "css": ".app {\n  width: calc(1px * var(--appsmith-ui-width));\n  justify-content: center;\n  border-radius: 0px;\n  border: none;\n}\n.app .tip-container {\n  margin-bottom: 20px;\n}\n.app .tip-container h2 {\n  margin-bottom: 20px;\n  font-size: 16px;\n  font-weight: 700;\n}\n.app .tip-container .tip-header {\n  display: flex;\n  justify-content: space-between;\n  align-items: baseline;\n}\n.app .tip-container .tip-header div {\n  color: #999;\n}\n.app .button-container {\n  text-align: right;\n}\n.app .button-container button {\n  margin: 0 10px;\n  border-radius: var(--appsmith-theme-borderRadius) !important;\n}\n.app .button-container button.primary {\n  background: var(--appsmith-theme-primaryColor) !important;\n}\n.app .button-container button.reset:not([disabled]) {\n  color: var(--appsmith-theme-primaryColor) !important;\n  border-color: var(--appsmith-theme-primaryColor) !important;\n}",
+    "html": "<!-- no need to write html, head, body tags, it is handled by the widget -->\n<div id=\"root\"></div>\n",
+    "js": "import React from 'https://cdn.jsdelivr.net/npm/react@18.2.0/+esm';\nimport reactDom from 'https://cdn.jsdelivr.net/npm/react-dom@18.2.0/+esm';\nimport { Menu } from 'https://cdn.jsdelivr.net/npm/antd@5.11.1/+esm';\nconst App = () => {\n  const menuItems = [{\n    key: 'dashboard',\n    label: 'Dashboard'\n  }, {\n    key: 'quickStart',\n    label: 'Khởi tạo nhanh'\n  }, {\n    key: 'management',\n    label: 'Quản lý',\n    children: [{\n      key: 'projects',\n      label: 'Danh mục dự án (Deals)'\n    }, {\n      key: 'contacts',\n      label: 'Danh mục liên hệ (Contacts)'\n    }, {\n      key: 'customers',\n      label: 'Quản lý khách hàng'\n    }, {\n      key: 'contracts',\n      label: 'Quản lý hợp đồng'\n    }]\n  }, {\n    key: 'settings',\n    label: 'Thiết lập',\n    children: [{\n      key: 'roles',\n      label: 'Roles'\n    }, {\n      key: 'mailNotifications',\n      label: 'Mail & thông báo'\n    }]\n  }];\n  return /*#__PURE__*/React.createElement(\"div\", {\n    style: {\n      width: '100%',\n      backgroundColor: '#012969',\n      color: 'white',\n      height: '100vh',\n      display: 'flex',\n      flexDirection: 'column'\n    }\n  }, /*#__PURE__*/React.createElement(\"div\", {\n    style: {\n      backgroundImage: 'url(https://static.ybox.vn/2021/4/1/1617594506640-1598945864535-innotech.png)',\n      backgroundSize: 'cover',\n      backgroundPosition: 'center',\n      height: '10%'\n    }\n  }), /*#__PURE__*/React.createElement(Menu, {\n    items: menuItems,\n    mode: \"inline\",\n    theme: \"dark\",\n    style: {\n      backgroundColor: '#012969',\n      color: 'white',\n      flex: 1\n    },\n    defaultOpenKeys: ['management', 'settings'] // Pre-open these menus\n  }));\n};\nappsmith.onReady(() => {\n  reactDom.render( /*#__PURE__*/React.createElement(App, null), document.getElementById('root'));\n});"
+  },
+  "theme": "{{appsmith.theme}}",
+  "topRow": 0,
+  "type": "CUSTOM_WIDGET",
+  "uncompiledSrcDoc": {
+    "css": ".app {\n  width: calc(1px * var(--appsmith-ui-width));\n  justify-content: center;\n  border-radius: 0px;\n  border: none;\n  \n  .tip-container {\n    margin-bottom: 20px;\n\n    h2 {\n      margin-bottom: 20px;\n      font-size: 16px;\n      font-weight: 700;\n    }\n\n    .tip-header {\n      display: flex;\n      justify-content: space-between;\n      align-items: baseline;\n\n      div {\n        color: #999;\n      }\n    }\n  }\n\t\n\t.button-container {\n      text-align: right;\n\n      button {\n        margin: 0 10px;\n        border-radius: var(--appsmith-theme-borderRadius) !important;\n\n        &.primary {\n          background: var(--appsmith-theme-primaryColor) !important;\n        }\n\n        &.reset:not([disabled]) {\n          color: var(--appsmith-theme-primaryColor) !important;\n          border-color: var(--appsmith-theme-primaryColor) !important;\n        }\n      }\n    }\n}\n",
+    "html": "<!-- no need to write html, head, body tags, it is handled by the widget -->\n<div id=\"root\"></div>\n",
+    "js": "import React from 'https://cdn.jsdelivr.net/npm/react@18.2.0/+esm';\nimport reactDom from 'https://cdn.jsdelivr.net/npm/react-dom@18.2.0/+esm';\nimport { Menu } from 'https://cdn.jsdelivr.net/npm/antd@5.11.1/+esm';\n\nconst App = () => {\n\tconst menuItems = [\n\t\t{\n\t\t\tkey: 'dashboard',\n\t\t\tlabel: 'Dashboard',\n\t\t},\n\t\t{\n\t\t\tkey: 'quickStart',\n\t\t\tlabel: 'Khởi tạo nhanh',\n\t\t},\n\t\t{\n\t\t\tkey: 'management',\n\t\t\tlabel: 'Quản lý',\n\t\t\tchildren: [\n\t\t\t\t{ key: 'projects', label: 'Danh mục dự án (Deals)' },\n\t\t\t\t{ key: 'contacts', label: 'Danh mục liên hệ (Contacts)' },\n\t\t\t\t{ key: 'customers', label: 'Quản lý khách hàng' },\n\t\t\t\t{ key: 'contracts', label: 'Quản lý hợp đồng' },\n\t\t\t],\n\t\t},\n\t\t{\n\t\t\tkey: 'settings',\n\t\t\tlabel: 'Thiết lập',\n\t\t\tchildren: [\n\t\t\t\t{ key: 'roles', label: 'Roles' },\n\t\t\t\t{ key: 'mailNotifications', label: 'Mail & thông báo' },\n\t\t\t],\n\t\t},\n\t];\n\n\treturn (\n\t\t<div\n\t\tstyle={{\n\t\twidth: '100%',\n\t\tbackgroundColor: '#012969',\n\t\tcolor: 'white',\n\t\theight: '100vh',\n\t\tdisplay: 'flex',\n\t\tflexDirection: 'column',\n\t\t}}\n\t\t>\n\t\t\t<div\nstyle={{\n\t\t\t backgroundImage: 'url(https://static.ybox.vn/2021/4/1/1617594506640-1598945864535-innotech.png)',\n\t\t\t backgroundSize: 'cover',\n\t\t\t backgroundPosition: 'center',\n\t\t\t height: '10%',\n\t\t\t}}\n\t\t\t/>\n<Menu\nitems={menuItems}\nmode=\"inline\"\ntheme=\"dark\"\nstyle={{\n\t\t\t backgroundColor: '#012969',\n\t\t\t color: 'white',\n\t\t\t flex: 1,\n\t\t\t}}\n\t\t\tdefaultOpenKeys={['management', 'settings']} // Pre-open these menus\n/>\n\t\t\t\t</div>\n);\n};\n\nappsmith.onReady(() => {\n\treactDom.render(<App />, document.getElementById('root'));\n});\n"
+  },
+  "version": 1,
+  "widgetId": "mc4333ygdr",
+  "widgetName": "Custom1"
+}
