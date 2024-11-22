@@ -1,0 +1,63 @@
+{
+  "backgroundColor": "",
+  "borderColor": "",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderWidth": "1",
+  "bottomRow": 40,
+  "boxShadow": "none",
+  "defaultModel": "{\n  \"tips\": [\n    \"Pass data to this widget in the default model field\",\n    \"Access data in the javascript file using the appsmith.model variable\",\n    \"Create events in the widget and trigger them in the javascript file using appsmith.triggerEvent('eventName')\",\n    \"Access data in CSS as var(--appsmith-model-{property-name})\"\n  ]\n}",
+  "dynamicBindingPathList": [
+    {
+      "key": "theme"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicTriggerPathList": [
+    {
+      "key": "onResetClick"
+    }
+  ],
+  "events": [
+    "onResetClick"
+  ],
+  "isCanvas": false,
+  "isLoading": false,
+  "isSearchWildcard": true,
+  "isVisible": true,
+  "key": "a17w9gv698",
+  "leftColumn": 21.333333333333332,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "mobileBottomRow": 40,
+  "mobileLeftColumn": 36,
+  "mobileRightColumn": 59,
+  "mobileTopRow": 10,
+  "needsErrorInfo": false,
+  "onResetClick": "{{showAlert('Successfully reset!!', '');}}",
+  "originalBottomRow": 40,
+  "originalTopRow": 33,
+  "parentColumnSpace": 5.6953125,
+  "parentId": "ursxdi3vf9",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 42.666666666666664,
+  "srcDoc": {
+    "css": ".app {\n  width: calc(1px * var(--appsmith-ui-width));\n  justify-content: center;\n  border-radius: 0px;\n  border: none;\n}\n.app .tip-container {\n  margin-bottom: 20px;\n}\n.app .tip-container h2 {\n  margin-bottom: 20px;\n  font-size: 16px;\n  font-weight: 700;\n}\n.app .tip-container .tip-header {\n  display: flex;\n  justify-content: space-between;\n  align-items: baseline;\n}\n.app .tip-container .tip-header div {\n  color: #999;\n}\n.app .button-container {\n  text-align: right;\n}\n.app .button-container button {\n  margin: 0 10px;\n  border-radius: var(--appsmith-theme-borderRadius) !important;\n}\n.app .button-container button.primary {\n  background: var(--appsmith-theme-primaryColor) !important;\n}\n.app .button-container button.reset:not([disabled]) {\n  color: var(--appsmith-theme-primaryColor) !important;\n  border-color: var(--appsmith-theme-primaryColor) !important;\n}",
+    "html": "<!-- no need to write html, head, body tags, it is handled by the widget -->\n<div id=\"root\"></div>\n",
+    "js": "import React from 'https://cdn.jsdelivr.net/npm/react@18.2.0/+esm';\nimport reactDom from 'https://cdn.jsdelivr.net/npm/react-dom@18.2.0/+esm';\n// import { InfoCircleOutlined } from 'https://cdn.jsdelivr.net/npm/@ant-design/icons@5.0.0/+esm';\n\nfunction App() {\n  return /*#__PURE__*/React.createElement(\"div\", {\n    style: {\n      width: 'max-content',\n      padding: \"0 2rem\",\n      height: '50px',\n      border: '1px solid #007bff',\n      // Blue border\n      backgroundColor: '#f2f2f6',\n      // Light gray background\n      borderRadius: '7px',\n      // Rounded corners\n      display: 'flex',\n      justifyContent: 'center',\n      alignItems: 'center',\n      boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',\n      margin: \"auto\"\n    }\n  }, /*#__PURE__*/React.createElement(\"img\", {\n    style: {\n      height: \"70%\"\n    },\n    src: \"https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/office-365-icon.png\"\n  }));\n}\nappsmith.onReady(() => {\n  reactDom.render( /*#__PURE__*/React.createElement(App, null), document.getElementById('root'));\n});"
+  },
+  "theme": "{{appsmith.theme}}",
+  "topRow": 33,
+  "type": "CUSTOM_WIDGET",
+  "uncompiledSrcDoc": {
+    "css": ".app {\n  width: calc(1px * var(--appsmith-ui-width));\n  justify-content: center;\n  border-radius: 0px;\n  border: none;\n  \n  .tip-container {\n    margin-bottom: 20px;\n\n    h2 {\n      margin-bottom: 20px;\n      font-size: 16px;\n      font-weight: 700;\n    }\n\n    .tip-header {\n      display: flex;\n      justify-content: space-between;\n      align-items: baseline;\n\n      div {\n        color: #999;\n      }\n    }\n  }\n\t\n\t.button-container {\n      text-align: right;\n\n      button {\n        margin: 0 10px;\n        border-radius: var(--appsmith-theme-borderRadius) !important;\n\n        &.primary {\n          background: var(--appsmith-theme-primaryColor) !important;\n        }\n\n        &.reset:not([disabled]) {\n          color: var(--appsmith-theme-primaryColor) !important;\n          border-color: var(--appsmith-theme-primaryColor) !important;\n        }\n      }\n    }\n}\n",
+    "html": "<!-- no need to write html, head, body tags, it is handled by the widget -->\n<div id=\"root\"></div>\n",
+    "js": "import React from 'https://cdn.jsdelivr.net/npm/react@18.2.0/+esm';\nimport reactDom from 'https://cdn.jsdelivr.net/npm/react-dom@18.2.0/+esm';\n// import { InfoCircleOutlined } from 'https://cdn.jsdelivr.net/npm/@ant-design/icons@5.0.0/+esm';\n\nfunction App() {\n\treturn (\n\t\t<div\n\t\t\tstyle={{\n\t\t\t\twidth: 'max-content',\n\t\t\t\tpadding: \"0 2rem\",\n\t\t\t\theight: '50px',\n\t\t\t\tborder: '1px solid #007bff', // Blue border\n\t\t\t\tbackgroundColor: '#f2f2f6', // Light gray background\n\t\t\t\tborderRadius: '7px', // Rounded corners\n\t\t\t\tdisplay: 'flex',\n\t\t\t\tjustifyContent: 'center',\n\t\t\t\talignItems: 'center',\n\t\t\t\tboxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',\n\t\t\t\tmargin: \"auto\"\n\t\t\t}}\n\t\t>\n\t\t\t<img style={{height: \"70%\"}} src=\"https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/office-365-icon.png\" />\n\t\t</div>\n\t);\n}\n\nappsmith.onReady(() => {\n\treactDom.render(<App />, document.getElementById('root'));\n});\n"
+  },
+  "version": 1,
+  "widgetId": "yrwt9jm0fq",
+  "widgetName": "365LoginBtn"
+}

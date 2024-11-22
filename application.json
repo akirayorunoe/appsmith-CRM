@@ -21,8 +21,20 @@
   "icon": "rose",
   "pages": [
     {
-      "id": "Page1",
+      "id": "ContactManagementPage",
       "isDefault": true
+    },
+    {
+      "id": "LoginPage",
+      "isDefault": false
+    },
+    {
+      "id": "Crm.annexes",
+      "isDefault": false
+    },
+    {
+      "id": "AdminPage",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {

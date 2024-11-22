@@ -1,0 +1,1 @@
+SELECT crm_system_db.user.id, crm_system_db.user.username, crm_system_db.user.fullname, crm_system_db.user.email, crm_system_db.user.password FROM crm_system_db.user WHERE username = {{this.params.username}}

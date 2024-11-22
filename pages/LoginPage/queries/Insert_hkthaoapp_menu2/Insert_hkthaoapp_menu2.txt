@@ -1,0 +1,1 @@
+INSERT INTO hkthaoapp.menu ("name","email","type","is_deleted","image","url") VALUES ('{{(Table1.newRow || {}).name}}','{{(Table1.newRow || {}).email}}','{{(Table1.newRow || {}).type}}','{{(Table1.newRow || {}).is_deleted}}','{{(Table1.newRow || {}).image}}','{{(Table1.newRow || {}).url}}')

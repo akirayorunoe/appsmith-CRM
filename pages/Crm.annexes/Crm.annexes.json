@@ -1,23 +1,23 @@
 {
-  "gitSyncId": "673f0a66c75c105a4a66e3c5_6262d8c8-1b71-496c-a5e7-cb0535f139ae",
+  "gitSyncId": "673f0a66c75c105a4a66e3c5_525229bf-f6ea-4122-b417-2852479c2eda",
   "unpublishedPage": {
     "layouts": [
       {
         "dsl": {
           "backgroundColor": "none",
-          "bottomRow": 1000,
+          "bottomRow": 860,
           "canExtend": true,
           "containerStyle": "none",
           "detachFromLayout": true,
           "dynamicBindingPathList": [],
           "dynamicTriggerPathList": [],
           "leftColumn": 0,
-          "minHeight": 1292,
+          "minHeight": 900,
           "parentColumnSpace": 1,
           "parentRowSpace": 1,
-          "rightColumn": 4896,
+          "rightColumn": 1174,
           "snapColumns": 64,
-          "snapRows": 124,
+          "snapRows": 125,
           "topRow": 0,
           "type": "CANVAS_WIDGET",
           "version": 90,
@@ -26,7 +26,7 @@
         }
       }
     ],
-    "name": "Page1",
-    "slug": "page1"
+    "name": "Crm.annexes",
+    "slug": "crm-annexes"
   }
 }

@@ -1,0 +1,58 @@
+{
+  "backgroundColor": "",
+  "borderColor": "",
+  "borderRadius": "0px",
+  "borderWidth": "",
+  "bottomRow": 13,
+  "boxShadow": "none",
+  "defaultModel": "{\n  \"tips\": [\n    \"Pass data to this widget in the default model field\",\n    \"Access data in the javascript file using the appsmith.model variable\",\n    \"Create events in the widget and trigger them in the javascript file using appsmith.triggerEvent('eventName')\",\n    \"Access data in CSS as var(--appsmith-model-{property-name})\"\n  ]\n}",
+  "dynamicBindingPathList": [
+    {
+      "key": "theme"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicTriggerPathList": [
+    {
+      "key": "onResetClick"
+    }
+  ],
+  "events": [
+    "onResetClick"
+  ],
+  "isCanvas": false,
+  "isLoading": false,
+  "isSearchWildcard": true,
+  "isVisible": true,
+  "key": "6qe14ns5rr",
+  "leftColumn": 10,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "mobileBottomRow": 56,
+  "mobileLeftColumn": 20,
+  "mobileRightColumn": 43,
+  "mobileTopRow": 26,
+  "needsErrorInfo": false,
+  "onResetClick": "{{showAlert('Successfully reset!!', '');}}",
+  "parentColumnSpace": 20.25,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 64,
+  "srcDoc": {
+    "css": ".app {\n  width: calc(1px * var(--appsmith-ui-width));\n  justify-content: center;\n  border-radius: 0px;\n  border: none;\n}\n.app .tip-container {\n  margin-bottom: 20px;\n}\n.app .tip-container h2 {\n  margin-bottom: 20px;\n  font-size: 16px;\n  font-weight: 700;\n}\n.app .tip-container .tip-header {\n  display: flex;\n  justify-content: space-between;\n  align-items: baseline;\n}\n.app .tip-container .tip-header div {\n  color: #999;\n}\n.app .button-container {\n  text-align: right;\n}\n.app .button-container button {\n  margin: 0 10px;\n  border-radius: var(--appsmith-theme-borderRadius) !important;\n}\n.app .button-container button.primary {\n  background: var(--appsmith-theme-primaryColor) !important;\n}\n.app .button-container button.reset:not([disabled]) {\n  color: var(--appsmith-theme-primaryColor) !important;\n  border-color: var(--appsmith-theme-primaryColor) !important;\n}",
+    "html": "<!-- no need to write html, head, body tags, it is handled by the widget -->\n<div id=\"root\"></div>\n",
+    "js": "import React from 'https://cdn.jsdelivr.net/npm/react@18.2.0/+esm';\nimport reactDom from 'https://cdn.jsdelivr.net/npm/react-dom@18.2.0/+esm';\nimport { Button, Card, Breadcrumb } from 'https://cdn.jsdelivr.net/npm/antd@5.11.1/+esm';\nimport Markdown from 'https://cdn.jsdelivr.net/npm/react-markdown@9.0.1/+esm';\nfunction App() {\n  return /*#__PURE__*/React.createElement(Breadcrumb, {\n    style: {\n      backgroundColor: \"#f1f3f4\",\n      height: \"35px\"\n    },\n    separator: \">\",\n    items: [{\n      title: 'Trang chủ'\n    }, {\n      title: 'Quản lý liên hệ',\n      href: ''\n    }]\n  });\n}\nappsmith.onReady(() => {\n  /*\n   * This handler function will get called when parent application is ready.\n   * Initialize your component here\n   * more info - https://docs.appsmith.com/reference/widgets/custom#onready\n   */\n  reactDom.render( /*#__PURE__*/React.createElement(App, null), document.getElementById(\"root\"));\n});"
+  },
+  "theme": "{{appsmith.theme}}",
+  "topRow": 8,
+  "type": "CUSTOM_WIDGET",
+  "uncompiledSrcDoc": {
+    "css": ".app {\n  width: calc(1px * var(--appsmith-ui-width));\n  justify-content: center;\n  border-radius: 0px;\n  border: none;\n  \n  .tip-container {\n    margin-bottom: 20px;\n\n    h2 {\n      margin-bottom: 20px;\n      font-size: 16px;\n      font-weight: 700;\n    }\n\n    .tip-header {\n      display: flex;\n      justify-content: space-between;\n      align-items: baseline;\n\n      div {\n        color: #999;\n      }\n    }\n  }\n\t\n\t.button-container {\n      text-align: right;\n\n      button {\n        margin: 0 10px;\n        border-radius: var(--appsmith-theme-borderRadius) !important;\n\n        &.primary {\n          background: var(--appsmith-theme-primaryColor) !important;\n        }\n\n        &.reset:not([disabled]) {\n          color: var(--appsmith-theme-primaryColor) !important;\n          border-color: var(--appsmith-theme-primaryColor) !important;\n        }\n      }\n    }\n}\n",
+    "html": "<!-- no need to write html, head, body tags, it is handled by the widget -->\n<div id=\"root\"></div>\n",
+    "js": "import React from 'https://cdn.jsdelivr.net/npm/react@18.2.0/+esm'\nimport reactDom from 'https://cdn.jsdelivr.net/npm/react-dom@18.2.0/+esm'\nimport { Button, Card, Breadcrumb } from 'https://cdn.jsdelivr.net/npm/antd@5.11.1/+esm'\nimport Markdown from 'https://cdn.jsdelivr.net/npm/react-markdown@9.0.1/+esm';\n\nfunction App() {\n\treturn (\n\t\t<Breadcrumb\n\t\tstyle={{backgroundColor: \"#f1f3f4\", height: \"35px\"}}\n\tseparator=\">\"\nitems={[\n\t\t\t {\n\t\t\t\t title: 'Trang chủ',\n\t\t\t },\n\t\t\t {\n\t\t\t\t title: 'Quản lý liên hệ',\n\t\t\t\t href: '',\n\t\t\t }\n\t\t\t ]}\n/>\n\t);\n}\n\nappsmith.onReady(() => {\n\t/*\n\t * This handler function will get called when parent application is ready.\n\t * Initialize your component here\n\t * more info - https://docs.appsmith.com/reference/widgets/custom#onready\n\t */\n\treactDom.render(<App />, document.getElementById(\"root\"));\n});"
+  },
+  "version": 1,
+  "widgetId": "hlpir8agzv",
+  "widgetName": "Custom2"
+}

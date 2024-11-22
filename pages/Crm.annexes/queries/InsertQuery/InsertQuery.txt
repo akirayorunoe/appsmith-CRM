@@ -1,0 +1,8 @@
+INSERT INTO crm."annexes" (
+	"annexid",
+	"annexdetails",
+	"contractid")
+VALUES (
+	'{{insert_form.formData.annexid}}',
+	'{{insert_form.formData.annexdetails}}',
+	'{{insert_form.formData.contractid}}');

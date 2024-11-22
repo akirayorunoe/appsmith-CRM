@@ -1,0 +1,1 @@
+INSERT INTO hkthaoapp.menu ("name","email","type","is_deleted","image","url") VALUES ('{{(JSONForm1.formData || {}).name}}','{{(JSONForm1.formData || {}).email}}','{{(JSONForm1.formData || {}).type}}','{{(JSONForm1.formData || {}).is_deleted}}','{{(JSONForm1.formData || {}).image}}','{{(JSONForm1.formData || {}).url}}')

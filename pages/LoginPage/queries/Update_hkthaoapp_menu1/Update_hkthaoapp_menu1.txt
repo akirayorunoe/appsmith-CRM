@@ -1,0 +1,1 @@
+UPDATE hkthaoapp.menu SET "name"= '{{Table1.updatedRow.name}}', "email"= '{{Table1.updatedRow.email}}', "type"= '{{Table1.updatedRow.type}}', "is_deleted"= '{{Table1.updatedRow.is_deleted}}', "image"= '{{Table1.updatedRow.image}}', "url"= '{{Table1.updatedRow.url}}' WHERE "id"= {{Table1.updatedRow.id}};
