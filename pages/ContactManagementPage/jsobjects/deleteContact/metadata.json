@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "673f0a66c75c105a4a66e3c5_76096609-f6be-478a-bd3a-347e2ad1cd18",
+  "id": "ContactManagementPage_deleteContact",
+  "unpublishedCollection": {
+    "name": "deleteContact",
+    "pageId": "ContactManagementPage",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

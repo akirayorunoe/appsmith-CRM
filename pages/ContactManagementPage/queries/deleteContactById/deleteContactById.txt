@@ -1,0 +1,2 @@
+DELETE FROM crm_system_db."contact"
+  WHERE "id" = {{this.params.contactId}}

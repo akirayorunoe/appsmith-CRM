@@ -1,0 +1,1 @@
+SELECT id, contactstatusname  FROM crm_system_db.contactstatus

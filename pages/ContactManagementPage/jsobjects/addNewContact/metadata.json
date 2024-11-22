@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "673f0a66c75c105a4a66e3c5_1f7cfc8e-b5d7-498c-a19c-915e4961f213",
+  "id": "ContactManagementPage_addNewContact",
+  "unpublishedCollection": {
+    "name": "addNewContact",
+    "pageId": "ContactManagementPage",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

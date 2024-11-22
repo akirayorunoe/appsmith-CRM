@@ -1,0 +1,2 @@
+INSERT INTO crm_system_db."contact" ("lookupcode", "email", "phonenumber", "contactowner", "primarycompany", "contactstatusid", "refferer", "note")
+  VALUES ({{this.params.lookupcode}}, {{this.params.email}}, {{this.params.phonenumber}}, {{this.params.contactowner}}, {{this.params.primarycompany}}, {{this.params.contactstatusid}}, {{this.params.refferer}}, {{this.params.note}});

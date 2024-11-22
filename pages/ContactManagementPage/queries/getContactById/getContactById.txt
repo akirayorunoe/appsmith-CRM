@@ -1,0 +1,15 @@
+SELECT 
+    ct.id,
+    ct."lookupcode", 
+    ct."contactowner", 
+    ct."email", 
+    ct."phonenumber", 
+    ct."primarycompany", 
+    ct."refferer",  
+    ct.creationDate, 
+		ct.note,
+    cts.id AS contactstatusid 
+FROM crm_system_db.contact AS ct
+LEFT JOIN crm_system_db.contactstatus AS cts
+ON ct.contactstatusid = cts.id
+WHERE ct.id = {{this.params.contactId}}

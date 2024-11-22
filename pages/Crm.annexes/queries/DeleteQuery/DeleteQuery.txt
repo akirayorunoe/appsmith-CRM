@@ -1,2 +1,0 @@
-DELETE FROM crm."annexes"
-  WHERE "annexid" = {{data_table.triggeredRow.annexid}};

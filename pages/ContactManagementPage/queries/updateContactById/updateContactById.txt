@@ -1,0 +1,11 @@
+UPDATE crm_system_db."contact" 
+SET
+    "lookupcode" = {{this.params.lookupcode}},
+    "email" = {{this.params.email}},
+    "phonenumber" = {{this.params.phonenumber}},
+    "contactowner" = {{this.params.contactowner}},
+    "primarycompany" = {{this.params.primarycompany}},
+    "contactstatusid" = {{this.params.contactstatusid}},
+    "refferer" = {{this.params.refferer}},
+    "note" = {{this.params.note}}
+WHERE "id" = {{this.params.contactId}};

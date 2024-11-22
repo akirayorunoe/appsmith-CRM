@@ -1,4 +1,0 @@
-UPDATE crm."annexes" SET
-		"annexdetails" = '{{update_form.fieldState.annexdetails.isVisible ? update_form.formData.annexdetails : update_form.sourceData.annexdetails}}',
-		"contractid" = '{{update_form.fieldState.contractid.isVisible ? update_form.formData.contractid : update_form.sourceData.contractid}}'
-WHERE "annexid" = {{data_table.selectedRow.annexid}};

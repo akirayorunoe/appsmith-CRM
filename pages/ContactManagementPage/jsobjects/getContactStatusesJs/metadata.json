@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "673f0a66c75c105a4a66e3c5_b85a7f2d-5a75-4629-9d71-962df2709462",
+  "id": "ContactManagementPage_getContactStatusesJs",
+  "unpublishedCollection": {
+    "name": "getContactStatusesJs",
+    "pageId": "ContactManagementPage",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}
